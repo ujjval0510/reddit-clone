@@ -7,11 +7,17 @@ type CommunitiesItemProps = {
 };
 
 const CommunitiesItem: React.FC<CommunitiesItemProps> = () => {
-    const [open, setModal] = useState(false);
+    const [open, setOpen] = useState(false);
+
     return (
         <>
-            {/* <CreateCommunityModal open={open} /> */}
-            <MenuItem>
+            <CreateCommunityModal open={open} handleClose={() => setOpen(false)} />
+            <MenuItem
+                width="100%"
+                fontSize="10pt"
+                _hover={{ bg: "gray.200" }}
+                onClick={() => setOpen(true)}
+            >
                 <Flex align="center">
                     <Icon as={GrAdd} mr={2} fontSize={20}></Icon>
                     Create Community

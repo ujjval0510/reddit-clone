@@ -17,11 +17,11 @@ const Directory: React.FC = () => {
         <Menu>
             <MenuButton
                 cursor="pointer"
-                padding="0px 6px"
-                borderRadius="4px"
+                padding="0pt 6pt"
+                borderRadius="4pt"
                 mr={2}
                 ml={{ base: 0, md: 2 }}
-                _hover={{ outline: "1px solid", outlineColor: "gray.200" }}>
+                _hover={{ outline: "1pt solid", outlineColor: "gray.200" }}>
 
                 <Flex
                     alignItems="center"
@@ -37,7 +37,6 @@ const Directory: React.FC = () => {
                 </Flex>
             </MenuButton>
             <MenuList>
-                {/* {user ? <UserList /> : <NoUserList setModalState={setModalState} />} */}
                 <CommunitiesItem />
             </MenuList>
         </Menu>
